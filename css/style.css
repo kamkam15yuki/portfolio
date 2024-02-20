@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+body {
+    background: #fff;
+    font-family: "Robot" , "Shippori Mincho" , serif;
+    color: #474747
+
+    
+}
+
+.main_nav {
+    position: absolute;
+    z-index: 3;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0 40px;
+}
+
+ul li {
+    list-style: none;
+}
+
+.nav {
+    margin-left: auto;
+}
+
+.nav_lists {
+    display: flex;
+}
+.nav_list {
+    padding: 20px;
+}
+.nav_list .nav_link {
+    color: #474747
+    letter-spacing 2px;
+    font-weight: bold;
+    display: block;
+    position: relative;
+    font-size: 12px;
+    text-align: center;
+}
+.nav_list .nav_link:before {
+    position: absolute;
+    content: ・;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -22px;
+    opacity: 0;
+    transition: 0.3s all;
+}
+/*  */
