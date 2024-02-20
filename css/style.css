@@ -39,6 +39,7 @@ ul li {
     position: relative;
     font-size: 12px;
     text-align: center;
+    font-family: "Noto Sans JP" , sans-serif;
 }
 .nav_list .nav_link:before {
     position: absolute;
