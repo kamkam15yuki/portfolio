@@ -31,13 +31,19 @@ ul li {
 .nav_list {
     padding: 20px;
 }
+.nav_link {
+    transition: all 0.3s;
+}
+.nav_link:hover {
+    transform: scale(1.1, 1.1);
+}
 .nav_list .nav_link {
-    color: #474747
+    color: #5c5c5c
     letter-spacing 2px;
     font-weight: bold;
     display: block;
     position: relative;
-    font-size: 12px;
+    font-size: 14px;
     text-align: center;
     font-family: "Noto Sans JP" , sans-serif;
 }
