@@ -168,6 +168,9 @@ body {
 .logo img {
     width: 100px;
 }
+.logo {
+    margin: auto;
+}
 .icon {
     margin: auto;
 }

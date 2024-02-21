@@ -3,7 +3,6 @@
 body {
     background: #fff;
     font-family: "Robot" , "Shippori Mincho" , serif;
-    color: #474747
 
     
 }
@@ -38,8 +37,8 @@ ul li {
     transform: scale(1.1, 1.1);
 }
 .nav_list .nav_link {
-    color: #5c5c5c
-    letter-spacing 2px;
+    color: #5c5c5c;
+    letter-spacing :2px;
     font-weight: bold;
     display: block;
     position: relative;
