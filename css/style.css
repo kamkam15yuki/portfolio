@@ -14,27 +14,34 @@ body {
     width: 100%;
     justify-content: space-between;
     padding: 0 40px;
+    top: 25px;
 }
-
 ul li {
     list-style: none;
 }
-
 .nav {
     margin-left: auto;
 }
-
 .nav_lists {
     display: flex;
 }
 .nav_list {
-    padding: 20px;
+    padding:  10px 15px;
+    margin: 0 10px;
+    background-color: #f6f6f6;
+    cursor: pointer;
+	display: block;
+	border: 0;
+	border-radius: 8px;
+	transition: color .3s, background .3s, box-shadow .3s, transform 0.3s;
+}
+.nav_list:hover {
+    color: white;
+	box-shadow: 0 3px 0 #5c5c5c;
+	transform: translateY(3px);
 }
 .nav_link {
     transition: all 0.3s;
-}
-.nav_link:hover {
-    transform: scale(1.1, 1.1);
 }
 .nav_list .nav_link {
     color: #5c5c5c;
@@ -42,7 +49,7 @@ ul li {
     font-weight: bold;
     display: block;
     position: relative;
-    font-size: 14px;
+    font-size: 16px;
     text-align: center;
     font-family: "Noto Sans JP" , sans-serif;
 }
@@ -56,3 +63,137 @@ ul li {
     transition: 0.3s all;
 }
 /*  */
+
+.sab_nav {
+    width: 100%;
+    padding: 110px 40px 0 40px ;
+}
+#sab01Button {
+    background-color: #ffffff; /* ボタンのデフォルトの背景色 */
+    color: #5c5c5c; /* ボタンのデフォルトのテキスト色 */
+    font-size: 16px;
+    letter-spacing :2px;
+    text-align: center;
+    font-weight: bold;
+    font-family: "Noto Sans JP" , sans-serif;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 12px;
+    cursor: pointer; /* カーソルをポインターに変更 */
+  }
+  
+#sab01Button:hover {
+background-color: #f6f6f6; /* マウスを合わせたときの背景色 */
+color: #5c5c5c; /* マウスを合わせたときのテキスト色 */
+}
+#sab01Button.clicked {
+background-color: #f6f6f6;
+}
+#sab02Button {
+background-color: #ffffff; /* ボタンのデフォルトの背景色 */
+color: #5c5c5c; /* ボタンのデフォルトのテキスト色 */
+font-size: 16px;
+letter-spacing :2px;
+text-align: center;
+font-weight: bold;
+font-family: "Noto Sans JP" , sans-serif;
+border: none;
+padding: 10px 18px;
+border-radius: 12px;
+cursor: pointer; /* カーソルをポインターに変更 */
+}
+
+#sab02Button:hover {
+background-color: #f6f6f6; /* マウスを合わせたときの背景色 */
+color: #5c5c5c; /* マウスを合わせたときのテキスト色 */
+}
+#sab03Button.clicked {
+background-color: #f6f6f6;
+}
+#sab03Button {
+background-color: #ffffff; /* ボタンのデフォルトの背景色 */
+color: #5c5c5c; /* ボタンのデフォルトのテキスト色 */
+font-size: 16px;
+letter-spacing :2px;
+text-align: center;
+font-weight: bold;
+font-family: "Noto Sans JP" , sans-serif;
+border: none;
+padding: 10px 18px;
+border-radius: 12px;
+cursor: pointer; /* カーソルをポインターに変更 */
+}
+
+#sab03Button:hover {
+background-color: #f6f6f6; /* マウスを合わせたときの背景色 */
+color: #5c5c5c; /* マウスを合わせたときのテキスト色 */
+}
+#sab03Button.clicked {
+background-color: #f6f6f6;
+}
+
+.top-all {
+    width: 100%;
+    padding: 70px 40px 0 40px;
+}
+.top-all-sakuhin {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: last baseline;
+}
+.top-all-logo {
+    width: 19%;
+    border-radius: 15px;
+    background-color: #ffffff;
+    transition: all 0.3s ease 0s;
+    box-shadow:
+    0 1.9px 2.5px rgba(0, 0, 0, 0.024),
+    0 5px 6.1px rgba(0, 0, 0, 0.02),
+    0 16.1px 17.4px rgba(0, 0, 0, 0.03),
+    0 19.2px 19.8px rgba(0, 0, 0, 0.02),
+    0 30.4px 28.8px rgba(0, 0, 0, 0.02),
+    0 80px 60px rgba(0, 0, 0, 0.03);
+} 
+.top-all-logo:hover {
+    transform: translateY(-0.4em);
+}
+.top-all-logo img {
+    width: 100%;
+    inset: 0px;
+    border-radius: 15px 15px 0 0 ;
+}
+.top-all-p {
+    width: 100%;
+    padding: 20px 20px 30px 20px;
+
+}
+.top-all-title {
+    width: 100%;
+    margin-bottom: 25px;
+}
+.top-all-title p {
+    font-size:1.7rem;
+    font-weight: bold;
+    color: #5c5c5c;
+    justify-content: space-between;
+    font-family: "Noto Sans JP" , sans-serif;
+}
+.p-text-title {
+    width: 100%;
+    margin-bottom: 10px;
+    justify-content: left;
+}
+.p-text-title p {
+    color: #5c5c5c;
+    letter-spacing :2px;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: "Noto Sans JP" , sans-serif;
+}
+.top-all-p span {
+    color: #999999;
+    font-size: 12px;
+    font-weight: bold;
+    font-family: "Noto Sans JP" , sans-serif;
+}

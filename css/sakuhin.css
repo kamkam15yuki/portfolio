@@ -175,7 +175,7 @@ body {
     margin: auto;
 }
 .icon img {
-    width: 400px;
+    width: 50vh;
 }
 .nav {
    margin: auto auto 0 auto;
@@ -195,13 +195,20 @@ ul li {
     display: flex;
 }
 .nav_list {
-    padding: 20px;
+    padding: 10px 15px;
+    margin: 0 10px;
+    background-color: #f6f6f6;
+    cursor: pointer;
+	display: block;
+	border: 0;
+	border-radius: 8px;
+	transition: color .3s, background .3s, box-shadow .3s, transform 0.3s;
+    
 } 
-.nav_link {
-    transition: all 0.3s;
-}
-.nav_link:hover { 
-    transform: scale(1.1, 1.1);
+.nav_list:hover {
+    color: white;
+	box-shadow: 0 3px 0 #5c5c5c;
+	transform: translateY(3px);
 }
 .nav_list .nav_link {
     color: #5c5c5c;
