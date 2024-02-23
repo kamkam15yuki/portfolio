@@ -136,6 +136,10 @@ background-color: #f6f6f6;
     width: 100%;
     padding: 70px 40px 0 40px;
 }
+.top-main-title {
+    display: flex;
+    width: 100%;
+}
 .top-all-sakuhin {
     width: 100%;
     display: flex;
@@ -156,7 +160,7 @@ background-color: #f6f6f6;
     0 80px 60px rgba(0, 0, 0, 0.03);
 } 
 .top-all-logo:hover {
-    transform: translateY(-0.4em);
+    transform: translateY(-0.7em);
 }
 .top-all-logo img {
     width: 100%;
@@ -195,5 +199,41 @@ background-color: #f6f6f6;
     color: #999999;
     font-size: 12px;
     font-weight: bold;
+    font-family: "Noto Sans JP" , sans-serif;
+}
+
+
+.top-more {
+    width: 100%;
+}
+.top-more-button {
+    width: 30%;
+    margin-bottom: 25px;
+    margin: auto 0 auto auto;
+}
+.top-more-list {
+    padding:  10px 15px;
+    background-color: #f6f6f6;
+    cursor: pointer;
+	display: block;
+	border: 0;
+	border-radius: 8px;
+	transition: color .3s, background .3s, box-shadow .3s, transform 0.3s;
+}
+.top-more-list:hover {
+    color: white;
+	box-shadow: 0 3px 0 #5c5c5c;
+	transform: translateY(3px);
+}
+.top-more-link {
+    transition: all 0.3s;
+}
+.top-more-list .top-more-link {
+    color: #5c5c5c;
+    font-weight: bold;
+    display: block;
+    position: relative;
+    font-size: 16px;
+    text-align: center;
     font-family: "Noto Sans JP" , sans-serif;
 }
