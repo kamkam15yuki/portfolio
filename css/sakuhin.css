@@ -175,24 +175,28 @@ body {
     margin: auto;
 }
 .icon img {
-    width: 50vh;
+    width: 65vh;
 }
 .nav {
-   margin: auto auto 0 auto;
+   margin-left: 0 auto;
 }
 .nav img {
     width: 100px;
 }
 
 
-
+.main_nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    position: relative;
+}
 ul li {
     list-style: none;
 }
-
-
 .nav_lists {
     display: flex;
+    align-items: center;
 }
 .nav_list {
     padding: 10px 15px;
@@ -205,10 +209,50 @@ ul li {
 	transition: color .3s, background .3s, box-shadow .3s, transform 0.3s;
     
 } 
+.main_left {
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease 0s;
+}
+.main_left:hover {
+    transform: translateY(-3px);
+}
+.nav-left {
+    display: flex;
+}
+.nav_link-left {
+    margin: 0 auto;
+}
+.nav_lists-left {
+    display: flex;
+    align-items: center;
+}
+.nav_list-left {
+    padding: 10px 15px;
+    cursor: pointer;
+	display: block;
+	border: 0;
+}
+.nav_list-left .nav_link-left {
+    color: #5c5c5c;
+    font-family: "Noto Sans JP" , sans-serif;
+    font-weight: bold;
+    display: block;
+    position: relative;
+    font-size: 16px;
+    text-align: center;
+    margin: auto;
+}
+.nav-left-01 img {
+    width: 44px;
+}
 .nav_list:hover {
     color: white;
 	box-shadow: 0 3px 0 #5c5c5c;
 	transform: translateY(3px);
+}
+.nav_link {
+    margin: 0 auto;
 }
 .nav_list .nav_link {
     color: #5c5c5c;
@@ -217,8 +261,9 @@ ul li {
     font-weight: bold;
     display: block;
     position: relative;
-    font-size: 14px;
+    font-size: 16px;
     text-align: center;
+    margin: auto;
 }
 .nav_list .nav_link:before {
     position: absolute;
