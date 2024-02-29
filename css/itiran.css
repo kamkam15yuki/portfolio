@@ -82,18 +82,18 @@ ul li {
     font-weight: bold;
     display: block;
     position: relative;
-    font-size: 16px;
+    font-size: 13px;
     text-align: center;
     margin: auto;
 }
 .nav-left-01 img {
-    width: 44px;
+    width: 30px;
 }
 .nav_lists {
     display: flex;
 }
 .nav_list {
-    padding:  10px 15px;
+    padding:  5px 13px;
     margin: 0 10px;
     background-color: #f6f6f6;
     cursor: pointer;
@@ -110,13 +110,6 @@ ul li {
 .nav_link {
     transition: all 0.3s;
 }
-.nav_link p {
-    margin: 0 0 0 15px;
-    font-size: 16px;
-    color: #5c5c5c;
-    font-weight: bold; 
-    font-family: "Noto Sans JP" , sans-serif;
-}
 .nav_link img {
     width: 50px;
 }
@@ -126,7 +119,7 @@ ul li {
     font-weight: bold;
     display: block;
     position: relative;
-    font-size: 16px;
+    font-size: 13px;
     text-align: center;
     font-family: "Noto Sans JP" , sans-serif;
 }
@@ -143,18 +136,18 @@ ul li {
 
 .sab_nav {
     width: 100%;
-    padding: 100px 40px 0 40px ;
+    padding: 80px 40px 0 70px ;
 }
 #sabButton {
     background-color: #ffffff; /* ボタンのデフォルトの背景色 */
     color: #5c5c5c; /* ボタンのデフォルトのテキスト色 */
-    font-size: 16px;
+    font-size: 13px;
     letter-spacing :2px;
     text-align: center;
     font-weight: bold;
     font-family: "Noto Sans JP" , sans-serif;
     border: none;
-    padding: 10px 18px;
+    padding: 5px 13px;
     border-radius: 12px;
     cursor: pointer; /* カーソルをポインターに変更 */
 }
@@ -165,13 +158,13 @@ color: #5c5c5c; /* マウスを合わせたときのテキスト色 */
 #sab01Button {
     background-color: #f6f6f6; /* ボタンのデフォルトの背景色 */
     color: #5c5c5c; /* ボタンのデフォルトのテキスト色 */
-    font-size: 16px;
+    font-size: 13px;
     letter-spacing :2px;
     text-align: center;
     font-weight: bold;
     font-family: "Noto Sans JP" , sans-serif;
     border: none;
-    padding: 10px 18px;
+    padding: 5px 13px;
     border-radius: 12px;
     cursor: pointer; /* カーソルをポインターに変更 */
 }
