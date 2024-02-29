@@ -1,5 +1,3 @@
-@charset "UTF-8";
-
 body {
     cursor: none;
     background: #fff;
@@ -7,85 +5,6 @@ body {
 
     
 }
-
-.top-image {
-    width: 100%;
-    text-align: center;
-    position: relative;
-    padding: 100px 0 0 0;
-}
-.top-image img {
-    width: 70%;
-    animation: slideIn 2.5s ease-out;
-}
-.top-img02 {
-    position: absolute;
-    top: 100px;
-    width: 100%;
-    animation: slideIn 3s ease-out;
-}
-.top-img02 img {
-    width: 70%;
-}
-.top-img03 {
-    position: absolute;
-    top: 100px;
-    width: 100%;
-    animation: slideIn 3s ease-out;
-}
-.top-img03 img {
-    width: 70%;
-}
-.top-img05 {
-    width: 100%;
-    position: relative;
-    margin-bottom: 150px;
-}
-.top-img05 img{
-    width: 100%;
-}
-.top-img06 {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    animation: slideIn 3s ease-out;
-}
-.top-img06 img {
-    width: 100%;
-}
-.top-image-text {
-    position: absolute;
-    top: 50%;
-    left: 10%;
-    text-align: left;
-    animation: slideIn 4s ease-out;
-}
-@keyframes slideIn {
-    0% {
-      transform: translateY(-100%);
-      opacity: 0;
-    }
-    100% {
-      transform: translateY(0);
-      opacity: 1;
-    }
-  }
-.top-image-text p {
-    font-size: 30px;
-    color: #5c5c5c;
-    font-family: "Noto Sans JP" , sans-serif;
-    font-weight: bold;
-    display: block;
-}
-.top-image-text span {
-    font-size: 15px;
-    color: #5c5c5c;
-    display: block;
-  
-}
-
-
-
 /*デフォルトのマウスカーソルを非表示にする*/
 html,a{
     cursor: none;
@@ -225,7 +144,6 @@ ul li {
 .sab_nav {
     width: 100%;
     padding: 100px 40px 0 40px ;
-    position: absolute;
 }
 #sabButton {
     background-color: #ffffff; /* ボタンのデフォルトの背景色 */
@@ -303,16 +221,7 @@ color: #5c5c5c; /* マウスを合わせたときのテキスト色 */
     0 19.2px 19.8px rgba(0, 0, 0, 0.02),
     0 30.4px 28.8px rgba(0, 0, 0, 0.02),
     0 80px 60px rgba(0, 0, 0, 0.03);
-
-    transform: translateY(10px);
-    opacity: 0;
-    transition: .5s;
 } 
-/* 追記 */
-.top-all-logo.show{
-    transform: translateY(0);
-    opacity: 1;
-  }
 .top-all-logo:hover {
     transform: translateY(-0.7em);
 }
@@ -404,56 +313,3 @@ small {
     font-weight: bold;
     font-family: "Noto Sans JP" , sans-serif;
 }
-
-
-
-
-/*loading*/
-@keyframes fadeOut {
-    from {
-        opacity: 1;
-    }
-    to {
-        display: none;
-        opacity: 0;
-        z-index: -1;
-    }
-}
-#loader {
-    width: 100%;
-    height: 100vh;
-    background-color: #00c2bc;
-    /* 環境によって「z-index」追加 */
-}
-/* 読み込み完了後に「loaded」を付与する */
-#loader.loaded {
-    animation: fadeOut 3s forwards;
-}
-.loading {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    color: #5c5c5c;
-    background-color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 30px;
-    font-weight: bold;
-    font-family: "Noto Sans JP" , sans-serif;
-
-    opacity: 0;
-    visibility: hidden;
-    transition: .3s;
-}
-
-.loading.active {
-    background-color: rgb(255, 255, 255);
-    z-index: 9999;
-    opacity: 1;
-    visibility: visible;
-}
-
-

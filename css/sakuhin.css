@@ -318,7 +318,7 @@ small {
 
 
 
-/*カーテン*/
+/*loadingカーテン*/
 #wrap::before,#wrap::after{
     position: fixed;
     z-index: 1;
@@ -329,43 +329,43 @@ small {
     height: 130%;
     content: '';
     background-color: #f6f6f6;
-  }
-  #wrap::before{
+}
+#wrap::before{
     left: 0;
     animation : curtain_l 1.5s;
-   -webkit-animation : curtain_l 1.5s;
-  }
-  #wrap::after{
+-webkit-animation : curtain_l 1.5s;
+}
+#wrap::after{
     right: 0;
     animation : curtain_r 1.5s;
-   -webkit-animation : curtain_r 1.5s;
-  }
-  
-  @keyframes curtain_l{
+-webkit-animation : curtain_r 1.5s;
+}
+
+@keyframes curtain_l{
     0%{visibility: visible;}
     20%{transform: rotate(0deg) translateX(0%); background-color: #f6f6f6;}
     60%{transform: rotate(6deg) translateX(-50%);}
     80%{opacity: 1;}
     100%{transform: rotate(0deg) translateX(-100%); opacity:0; visibility: hidden;}
-  }
-  @-webkit-keyframes curtain_l{
+}
+@-webkit-keyframes curtain_l{
     0%{visibility: visible;}
     20%{-webkit-transform: rotate(0deg) translateX(0%); background-color: #f6f6f6;}
     60%{-webkit-transform: rotate(6deg) translateX(-50%);}
     80%{opacity: 1;}
     100%{-webkit-transform: rotate(0deg) translateX(-100%); opacity:0; visibility: hidden;}
-  }
-  @keyframes curtain_r{
+}
+@keyframes curtain_r{
     0%{ visibility: visible;}
     20%{transform: rotate(0deg) translateX(0%); background-color: #f6f6f6;}
     60%{transform: rotate(-6deg) translateX(50%);}
     80%{opacity: 1;}
     100%{transform: rotate(0deg) translateX(100%); opacity:0; visibility: hidden;}
-  }
-  @-webkit-keyframes curtain_r{
+}
+@-webkit-keyframes curtain_r{
     0%{visibility: visible;}
     20%{-webkit-transform: rotate(0deg) translateX(0%); background-color: #f6f6f6;}
     60%{-webkit-transform: rotate(-6deg) translateX(50%);}
     80%{opacity: 1;}
     100%{-webkit-transform: rotate(0deg) translateX(100%); opacity:0; visibility: hidden;}
-  }
+}
