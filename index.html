@@ -5,18 +5,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1,minimum-scale=1.0,maxmum-scale2.0,user-scale=yes">
     <title>ポートフォリオサイト</title>
-    <div class="loading active" id="loading">
-        <div class="loading-txt">loading...</div>
-    </div>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/reset.css">
-
 </head>
 
 <body>
     <div id="cursor" class="cursor"></div>
 
-    <div class="main_nav">
+    <div class="main_nav" id="js-header">
         <div class="main_left">
             <a href="index.html">
                 <div class="nav-left-01">
@@ -53,21 +49,27 @@
                         <a href="index.html" class="nav_link">
                             works
                         </a>
+                        <ul class="sub-menu">
+                            <li><a href="mascotlogo.html">Mascot</a></li>
+                            <li><a href="logo.html">Logo</a></li>
+                            <li><a href="web.html">Web</a></li>
+                            <li><a href="Thumbnail.html">Thumbnail</a></li>
+                            <li><a href="Edit.html">Edit</a></li>
+                        </ul>
                     </li>
                 </ul>
             </nav>
         </div>
     </div>
 
-    <div class="sab_nav">
+    <div class="sab_nav" id="js-mainVisual">
         <a href="index.html"><button id="sab01Button">All</button></a>
         <a href="mascotlogo.html"><button id="sabButton">Mascot</button></a>
-        <a href="logo.html"><button id="sabButton">LOGO</button></a>
-        <a href="WEB.html"><button id="sabButton">WEB</button></a>
+        <a href="logo.html"><button id="sabButton">Logo</button></a>
+        <a href="web.html"><button id="sabButton">Web</button></a>
         <a href="Thumbnail.html"><button id="sabButton">Thumbnail</button></a>
         <a href="Edit.html"><button id="sabButton">Edit</button></a>
     </div>
-
 
     <div class="top-image">
         <div class="top-img">
@@ -77,22 +79,48 @@
             <div class="top-img02">
                 <img src="image/top-img02.png">
             </div>
-            <div class="top-img03">
-                <img src="image/top-img03.png">
-            </div>
         </div>
-        <div class="top-image-text">
-            <p>Yuki</p>
-            <span>Designer</span>
-            <p>Portfolio</p>
-            
-        </div>
-
     </div>
+
+
+
     <div class="top-img05">
         <img src="image/top-img05.png">
         <div class="top-img06">
-            <img src="image/top-img06.png">
+            <div class="top-img06">
+                <a href="index.html"><img src="image/top-img06.png"></a>
+            </div>
+            <div class="top-img06">
+                <img src="image/top-img07.png">
+            </div>
+            <div class="top-img06">
+                <img src="image/top-img08.png">
+            </div>
+        </div>
+        <div class="top-img07">
+            <div class="top-img07">
+                <img src="image/top-img09.png">
+            </div>
+            <div class="top-img07">
+                <img src="image/top-img10.png">
+            </div>
+            <div class="top-img07">
+                <img src="image/top-img11.png">
+            </div>
+        </div>
+        <div class="top-img08">
+            <div class="top-img08">
+                <img src="image/top-img12.png">
+            </div>
+            <div class="top-img08">
+                <img src="image/top-img13.png">
+            </div>
+            <div class="top-img08">
+                <img src="image/top-img14.png">
+            </div>
+            <div class="top-img08">
+                <img src="image/top-img15.png">
+            </div>
         </div>
     </div>
 
@@ -565,7 +593,14 @@
 
     <script src="js/mouse.js"></script>
     <script src="js/loading.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/nav.js"></script>
+    <script src="js/top-logo.js"></script>
     <script src="js/top-text.js"></script>
+    <script src="js/top-text02.js"></script>
+    <script src="js/top-text03.js"></script>
+    <script src="js/top-text04.js"></script>
+
 </body>
 
 </html>

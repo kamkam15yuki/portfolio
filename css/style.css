@@ -8,57 +8,71 @@ body {
     
 }
 
+/*トップのイメージ*/
 .top-image {
     width: 100%;
     text-align: center;
     position: relative;
+    top: -80px;
+    z-index: -1;
+    margin-bottom: 200px;
 }
 .top-image img {
-    width: 70%;
-    animation: slideIn 2.5s ease-out;
+    width: 80%;
+    animation: slideIn 2s ease-out;
 }
 .top-img02 {
     position: absolute;
     top: 0;
     width: 100%;
-    animation: slideIn 3s ease-out;
+    animation: slideIn 2.5s ease-out;
 }
 .top-img02 img {
-    width: 70%;
-}
-.top-img03 {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    animation: slideIn 3s ease-out;
-}
-.top-img03 img {
-    width: 70%;
+    width: 80%;
 }
 .top-img05 {
     width: 100%;
     position: relative;
-    margin-bottom: 150px;
+    margin: 50px 0 50px 0;
 }
 .top-img05 img{
     width: 100%;
 }
 .top-img06 {
     position: absolute;
-    top: 10%;
+    top: 0;
     width: 100%;
-    animation: slideIn 3s ease-out;
+}
+.top-img06.show {
+    animation: slideIn 1.5s ease-out;
 }
 .top-img06 img {
     width: 100%;
+    top: 0;
 }
-.top-image-text {
+.top-img07 {
     position: absolute;
-    top: 40%;
-    left: 7%;
-    text-align: left;
-    animation: slideIn 4s ease-out;
+    top: 0;
+    width: 100%;
 }
+.top-img07.show {
+    animation: slideIn 2s ease-out;
+}
+.top-img07 img {
+    width: 100%;
+}
+.top-img08 {
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.top-img08.show {
+    animation: slideIn 2.2s ease-out;
+}
+.top-img08 img {
+    width: 100%;
+}
+
 @keyframes slideIn {
     0% {
       transform: translateY(-100%);
@@ -88,8 +102,7 @@ body {
 /*デフォルトのマウスカーソルを非表示にする*/
 html,a{
     cursor: none;
-  }
-
+}
 /*独自のマウスカーソルを作成*/
 .cursor {
 position: fixed;
@@ -114,18 +127,20 @@ height: 20px;
 background: #5c5c5c;
 }
 
+/*メインヘッダー*/
 .main_nav {
-    z-index: 3;
+    position: fixed;
     display: flex;
     width: 100%;
     justify-content: space-between;
-    padding: 0 40px;
-    top: 25px;
-    position: fixed;
+    padding: 15px 40px;
     z-index: 999;
     align-items: center;
     box-sizing: border-box;
 }
+.main_nav.change-color {
+    background-color: rgb(255, 255, 255,0.8);
+  }
 ul li {
     list-style: none;
 }
@@ -136,6 +151,9 @@ ul li {
     display: flex;
     align-items: center;
     transition: all 0.3s ease 0s;
+}
+.nav-left-01{
+    margin: auto 0;
 }
 .main_left:hover {
     transform: translateY(-3px);
@@ -151,7 +169,7 @@ ul li {
     align-items: center;
 }
 .nav_list-left {
-    padding: 5px 13px;
+    padding:0 13px;
     cursor: pointer;
 	display: block;
 	border: 0;
@@ -162,12 +180,14 @@ ul li {
     font-weight: bold;
     display: block;
     position: relative;
-    font-size: 13px;
+    font-size: 15px;
     text-align: center;
     margin: auto;
 }
 .nav-left-01 img {
-    width: 30px;
+    width: 33px;
+    margin: auto;
+    display: block;
 }
 .nav_lists {
     display: flex;
@@ -186,6 +206,37 @@ ul li {
     color: white;
 	box-shadow: 0 3px 0 #5c5c5c;
 	transform: translateY(3px);
+}
+/*サブメニュー*/
+.sub-menu {
+    position: absolute;
+    width: 120px;
+    top: 50px;
+    right: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: .5s;
+    text-align: center;
+}
+.sub-menu a {
+    color: #5c5c5c;
+    padding: 10px 15px;
+    font-size: 13px;
+    font-family: "Noto Sans JP" , sans-serif;
+    font-weight: bold;
+    margin-bottom: 1px;
+    background-color: #f6f6f6;
+    display: block;
+}
+.sub-menu a:hover {
+    color: #fff;
+}
+.nav_list:hover ul,.nav_list ul.focused {
+    opacity: 1;
+    visibility: visible;
+}
+.nav_list li a:hover,.nav_list li a:focus {
+    background: #9c9c9c;
 }
 .nav_link {
     transition: all 0.3s;
@@ -212,11 +263,11 @@ ul li {
     opacity: 0;
     transition: 0.3s all;
 }
-/*  */
 
+/* サブヘッダー */
 .sab_nav {
     width: 100%;
-    padding: 80px 40px 0 70px ;
+    padding: 80px 40px 0 40px ;
     position: relative;
 }
 #sabButton {
@@ -267,11 +318,11 @@ color: #5c5c5c; /* マウスを合わせたときのテキスト色 */
     border-top: 1px solid;
     content: "";
     width: 93%; /* 線の長さ */
-  }
+}
 
 .top-all {
     width: 100%;
-    padding: 70px 40px 0 40px;
+    padding: 200px 40px 0 40px;
 }
 .top-main-title {
     display: flex;
@@ -387,7 +438,7 @@ footer {
     width: 100%;
     background-color: #ffffff;
     text-align: center;
-    margin: 40px 0 30px 0;
+    margin: 100px 0 30px 0;
 }
 small {
     color: #5c5c5c;
@@ -396,56 +447,3 @@ small {
     font-weight: bold;
     font-family: "Noto Sans JP" , sans-serif;
 }
-
-
-
-
-/*loading*/
-@keyframes fadeOut {
-    from {
-        opacity: 1;
-    }
-    to {
-        display: none;
-        opacity: 0;
-        z-index: -1;
-    }
-}
-#loader {
-    width: 100%;
-    height: 100vh;
-    background-color: #00c2bc;
-    /* 環境によって「z-index」追加 */
-}
-/* 読み込み完了後に「loaded」を付与する */
-#loader.loaded {
-    animation: fadeOut 3s forwards;
-}
-.loading {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    color: #5c5c5c;
-    background-color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 30px;
-    font-weight: bold;
-    font-family: "Noto Sans JP" , sans-serif;
-
-    opacity: 0;
-    visibility: hidden;
-    transition: .3s;
-}
-
-.loading.active {
-    background-color: rgb(255, 255, 255);
-    z-index: 9999;
-    opacity: 1;
-    visibility: visible;
-}
-
-

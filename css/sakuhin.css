@@ -154,9 +154,10 @@ body {
     position: absolute;
     transform: translate(-50%, -50%);
 }
-.right-05 a:hover{ opacity: 0.6; filter: brightness(110%); }
-
-
+.right-05 img {
+    width: 100%;
+    margin-top: 30px;
+}
 .sakuhin_main-right-06 {
     width: 100%;
     height: 100vh;
@@ -208,12 +209,11 @@ body {
 .nav img {
     width: 100px;
 }
-
-
 .main_nav {
     display: flex;
     width: 100%;
     justify-content: space-between;
+    align-items: center;
     position: relative;
 }
 ul li {
@@ -224,7 +224,7 @@ ul li {
     align-items: center;
 }
 .nav_list {
-    padding: 10px 15px;
+    padding: 5px 13px;
     margin: 0 10px;
     background-color: #f6f6f6;
     cursor: pointer;
@@ -253,7 +253,7 @@ ul li {
     align-items: center;
 }
 .nav_list-left {
-    padding: 10px 15px;
+    padding: 5px 13px;
     cursor: pointer;
 	display: block;
 	border: 0;
@@ -264,12 +264,14 @@ ul li {
     font-weight: bold;
     display: block;
     position: relative;
-    font-size: 16px;
+    font-size: 15px;
     text-align: center;
     margin: auto;
 }
 .nav-left-01 img {
-    width: 44px;
+    width: 33px;
+    margin: auto;
+    display: block;
 }
 .nav_list:hover {
     color: white;
@@ -286,7 +288,7 @@ ul li {
     font-weight: bold;
     display: block;
     position: relative;
-    font-size: 16px;
+    font-size: 13px;
     text-align: center;
     margin: auto;
 }
@@ -371,7 +373,7 @@ small {
 }
 
 /*デフォルトのマウスカーソルを非表示にする*/
-html,a{
+html,a,li{
     cursor: none;
   }
 
@@ -395,5 +397,5 @@ pointer-events: none;
     left: -20px;
     width: 20px;
     height: 20px;
-    background: #5c5c5c;
-    }
+    background: #ff6f6f;
+}
