@@ -7,7 +7,7 @@ body {
 }
 
 /*デフォルトのマウスカーソルを非表示にする*/
-html,a{
+* {
     cursor: none;
   }
 
@@ -33,6 +33,7 @@ left: -20px;
 width: 20px;
 height: 20px;
 background: #5c5c5c;
+opacity: 0.7;
 }
 
 .main_nav {
@@ -40,7 +41,7 @@ background: #5c5c5c;
     display: flex;
     width: 100%;
     justify-content: space-between;
-    padding: 15px 40px;
+    padding: 25px 40px;
     position: fixed;
     z-index: 999;
     align-items: center;
@@ -75,7 +76,7 @@ ul li {
 }
 .nav_list-left {
     padding: 0px 13px;
-    cursor: pointer;
+    /* cursor: pointer; */
 	display: block;
 	border: 0;
 }
@@ -101,7 +102,7 @@ ul li {
     padding:  5px 13px;
     margin: 0 10px;
     background-color: #f6f6f6;
-    cursor: pointer;
+    /* cursor: pointer; */
 	display: block;
 	border: 0;
 	border-radius: 8px;
@@ -185,7 +186,7 @@ ul li {
     border: none;
     padding: 5px 13px;
     border-radius: 12px;
-    cursor: pointer; /* カーソルをポインターに変更 */
+    cursor: none; /* カーソルをポインターに変更 */
 }
 #sabButton:hover {
 background-color: #f6f6f6; /* マウスを合わせたときの背景色 */
@@ -202,7 +203,7 @@ color: #5c5c5c; /* マウスを合わせたときのテキスト色 */
     border: none;
     padding: 5px 13px;
     border-radius: 12px;
-    cursor: pointer; /* カーソルをポインターに変更 */
+    cursor: none; /* カーソルをポインターに変更 */
 }
 #sab01Button:hover {
 background-color: #f6f6f6; /* マウスを合わせたときの背景色 */
@@ -286,7 +287,6 @@ color: #5c5c5c; /* マウスを合わせたときのテキスト色 */
 }
 .p-text-title p {
     color: #5c5c5c;
-    letter-spacing :2px;
     font-size: 18px;
     font-weight: bold;
     font-family: "Noto Sans JP" , sans-serif;
@@ -345,4 +345,58 @@ small {
     font-size: 18px;
     font-weight: bold;
     font-family: "Noto Sans JP" , sans-serif;
+}
+
+
+
+/*loadingカーテン*/
+#wrap::before,#wrap::after{
+    position: fixed;
+    z-index: 1;
+    top: -15%;
+    display: block;
+    visibility: hidden;
+    width: 50%;
+    height: 130%;
+    content: '';
+    background-color: #f6f6f6;
+}
+#wrap::before{
+    left: 0;
+    animation : curtain_l 1.5s;
+-webkit-animation : curtain_l 1.5s;
+}
+#wrap::after{
+    right: 0;
+    animation : curtain_r 1.5s;
+-webkit-animation : curtain_r 1.5s;
+}
+
+@keyframes curtain_l{
+    0%{visibility: visible;}
+    20%{transform: rotate(0deg) translateX(0%); background-color: #f6f6f6;}
+    60%{transform: rotate(6deg) translateX(-50%);}
+    80%{opacity: 1;}
+    100%{transform: rotate(0deg) translateX(-100%); opacity:0; visibility: hidden;}
+}
+@-webkit-keyframes curtain_l{
+    0%{visibility: visible;}
+    20%{-webkit-transform: rotate(0deg) translateX(0%); background-color: #f6f6f6;}
+    60%{-webkit-transform: rotate(6deg) translateX(-50%);}
+    80%{opacity: 1;}
+    100%{-webkit-transform: rotate(0deg) translateX(-100%); opacity:0; visibility: hidden;}
+}
+@keyframes curtain_r{
+    0%{ visibility: visible;}
+    20%{transform: rotate(0deg) translateX(0%); background-color: #f6f6f6;}
+    60%{transform: rotate(-6deg) translateX(50%);}
+    80%{opacity: 1;}
+    100%{transform: rotate(0deg) translateX(100%); opacity:0; visibility: hidden;}
+}
+@-webkit-keyframes curtain_r{
+    0%{visibility: visible;}
+    20%{-webkit-transform: rotate(0deg) translateX(0%); background-color: #f6f6f6;}
+    60%{-webkit-transform: rotate(-6deg) translateX(50%);}
+    80%{opacity: 1;}
+    100%{-webkit-transform: rotate(0deg) translateX(100%); opacity:0; visibility: hidden;}
 }
