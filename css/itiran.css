@@ -227,7 +227,6 @@ color: #5c5c5c; /* マウスを合わせたときのテキスト色 */
 
 .top-all {
     width: 100%;
-    padding: 250px 40px 0 40px;
 }
 .top-all01 {
     width: 100%;
@@ -247,7 +246,6 @@ color: #5c5c5c; /* マウスを合わせたときのテキスト色 */
     width: 19%;
     border-radius: 15px;
     background-color: #ffffff;
-    transition: all 0.3s ease 0s;
     box-shadow:
     0 1.9px 2.5px rgba(0, 0, 0, 0.024),
     0 5px 6.1px rgba(0, 0, 0, 0.02),
@@ -256,9 +254,6 @@ color: #5c5c5c; /* マウスを合わせたときのテキスト色 */
     0 30.4px 28.8px rgba(0, 0, 0, 0.02),
     0 80px 60px rgba(0, 0, 0, 0.03);
 } 
-.top-all-logo:hover {
-    transform: translateY(-0.7em);
-}
 .top-all-logo img {
     width: 100%;
     inset: 0px;
@@ -337,7 +332,6 @@ footer {
     width: 100%;
     background-color: #ffffff;
     text-align: center;
-    margin: 100px 0 30px 0;
 }
 small {
     color: #5c5c5c;
@@ -399,4 +393,271 @@ small {
     60%{-webkit-transform: rotate(-6deg) translateX(50%);}
     80%{opacity: 1;}
     100%{-webkit-transform: rotate(0deg) translateX(100%); opacity:0; visibility: hidden;}
+}
+
+.hamburger-menu {
+    display: none;
+}
+
+
+/*パソコン用*/
+@media only screen and (min-width: 960px) {
+    .top-all-logo {
+        transform: translateY(10px);
+        transition: .5s;
+    } 
+    /* 追記 */
+    .top-all-logo.show{
+        transform: translateY(0);
+        opacity: 1;
+      }
+    .top-all-logo:hover {
+        transform: translateY(-0.7em);
+    }
+    .top-all{
+       padding: 200px 40px 0 40px; 
+    }
+    footer {
+        margin: 100px 0 0 0;
+    }
+    
+}
+/*スマホ用*/
+@media only screen and (max-width: 960px) {
+
+    .hamburger-menu {
+        display: block; /* ハンバーガーメニューを表示する */
+    }
+        .nav_lists {
+        display: none; /* 通常のメニューを非表示にする */
+    }
+
+    .menu-btn {
+		position: fixed;
+		top: 10px;
+		right: 10px;
+		display: flex;
+		height: 60px;
+		width: 60px;
+		justify-content: center;
+		align-items: center;
+		z-index: 90;
+	}
+	.menu-btn span,
+	.menu-btn span:before,
+	.menu-btn span:after {
+		content: '';
+		display: block;
+		height: 3px;
+		width: 25px;
+		background-color: #5c5c5c;
+		position: absolute;
+	}
+	.menu-btn span:before {
+		bottom: 8px;
+	}
+	.menu-btn span:after {
+		top: 8px;
+	}.menu-btn {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    height: 60px;
+    width: 60px;
+    justify-content: center;
+    align-items: center;
+    z-index: 90;
+    }
+    .menu-btn span,
+    .menu-btn span:before,
+    .menu-btn span:after {
+        content: '';
+        display: block;
+        height: 3px;
+        width: 25px;
+        background-color: #5c5c5c;
+        position: absolute;
+    }
+    .menu-btn span:before {
+        bottom: 8px;
+    }
+    .menu-btn span:after {
+        top: 8px;
+    }
+    #menu-btn-check:checked ~ .menu-btn span {
+        background-color: rgba(255, 255, 255, 0);/*メニューオープン時は真ん中の線を透明にする*/
+    }
+    #menu-btn-check:checked ~ .menu-btn span::before {
+        bottom: 0;
+        transform: rotate(45deg);
+    }
+    #menu-btn-check:checked ~ .menu-btn span::after {
+        top: 0;
+        transform: rotate(-45deg);
+    }
+    #menu-btn-check {
+        display: none;
+    }
+    .menu-content {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 80;
+        background-color: #3584bb;
+    }
+    .menu-content ul {
+        padding: 70px 10px 0;
+    }
+    .menu-content ul li {
+        list-style: none;
+    }
+    .menu-content ul li a {
+        display: block;
+        width: 100%;
+        font-size: 16px;
+        box-sizing: border-box;
+        color:#5c5c5c;
+        text-decoration: none;
+        padding: 20px 15px 20px 15px;
+        position: relative;
+        font-family: "Noto Sans JP" , sans-serif;
+        font-weight: bold;
+        display: block;
+    }
+    .menu-content ul li a::before {
+        content: "";
+        width: 8px;
+        height: 8px;
+        border-top: solid 2px #5c5c5c;
+        border-right: solid 2px #5c5c5c;
+        transform: rotate(45deg);
+        position: absolute;
+        right: 15px;
+        top: 27px;
+    }
+    .menu-content {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 100%;/*leftの値を変更してメニューを画面外へ*/
+        z-index: 80;
+        background-color: #ffffff;
+        transition: all 0.5s;/*アニメーション設定*/
+    }
+    #menu-btn-check:checked ~ .menu-content {
+        left: 0;/*メニューを画面内へ*/
+    }
+
+
+    /*メインナビ*/
+    .main_nav {
+        padding: 25px 20px;
+        z-index: 999;
+        align-items: center;
+        box-sizing: border-box;
+    }
+
+    /*サブナビ*/
+    .sab_nav {
+        padding: 80px 20px 0 20px ;
+        overflow-y: auto; /* 縦方向にスクロールできるようにする */
+        white-space: nowrap; /* ボタンが横方向に並ぶようにする */
+        scroll-snap-type: y mandatory; /* 縦方向にスナップするように設定 */
+        scrollbar-width: none; /* Firefox対応: スクロールバーを非表示にする */
+        -ms-overflow-style: none; /* IE/Edge対応: スクロールバーを非表示にする */
+    }
+    .sab_nav::-webkit-scrollbar {
+        display: none; /* Webkitブラウザ対応: スクロールバーを非表示にする */
+    }
+    .sav_nav a {
+        display: inline-block; /* ボタンを横方向に並べる */
+        scroll-snap-align: start; /* スクロールの開始位置にボタンをスナップする */
+    }
+    #sabButton {
+        font-size: 12px;
+        padding: 10px 13px;
+        border-radius: 12px;
+    }
+    #sabButton:hover {
+    background-color: #f6f6f6; /* マウスを合わせたときの背景色 */
+    color: #5c5c5c; /* マウスを合わせたときのテキスト色 */
+    }
+    #sab01Button {
+        font-size: 12px;
+        padding: 10px 13px;
+        border-radius: 12px;
+    }
+
+    /*作品画面調整*/
+    .top-all01 {
+        padding: 70px 20px 0 20px;
+    }
+    .top-all{
+        padding: 30px 20px 0 20px;
+    }
+
+
+    /*作品一覧テキスト*/
+    .text1 {
+        font-size: 15px;
+        margin-bottom: 20px;
+      }
+    .text1:after {
+        width: 75%; /* 線の長さ */
+    }
+
+    /*作品メインタイトル*/
+    .top-all-title {
+        width: 100%;
+        margin-bottom: 25px;
+    }
+    .top-all-title p {
+        font-size:1.7rem;
+        font-weight: bold;
+        color: #5c5c5c;
+        justify-content: space-between;
+        font-family: "Noto Sans JP" , sans-serif;
+    }
+    /*view moreボタン*/
+    .top-more{
+        display: none;
+    }
+
+    /*作品調整*/
+    .top-all-sakuhin {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch; /* iOSデバイスでスムーズなスクロールを有効にする */
+    }
+    .top-all-logo a {
+        display: block;
+    }
+    .top-all-logo {
+        flex: 0 0 auto;
+        scroll-snap-align: start;
+        width: 250px;
+        margin: 0 10px 70px 10px;
+        box-shadow:
+        0 1.9px 2.5px rgba(0, 0, 0, 0.024),
+        0 5px 6.1px rgba(0, 0, 0, 0.02),
+        0 10.1px 12.4px rgba(0, 0, 0, 0.03),
+        0 15.2px 16.8px rgba(0, 0, 0, 0.02),
+        0 20.4px 18.8px rgba(0, 0, 0, 0.02),
+        0 30px 25px rgba(0, 0, 0, 0.03);
+    } 
+
+    footer {
+        font-size: 15px;
+    }
+    small {
+        font-size: 12px;
+        font-weight: bold;
+    }
+    
+
 }
