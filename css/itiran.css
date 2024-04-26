@@ -2,6 +2,7 @@ body {
     cursor: none;
     background: #fff;
     font-family: "Robot" , "Shippori Mincho" , serif;
+    
 
     
 }
@@ -328,6 +329,15 @@ color: #5c5c5c; /* マウスを合わせたときのテキスト色 */
     text-align: center;
     font-family: "Noto Sans JP" , sans-serif;
 }
+
+.document {
+    width: 100%;
+    text-align: center;
+}
+.document img {
+    width: 80%;
+}
+
 footer {
     width: 100%;
     background-color: #ffffff;
@@ -650,6 +660,11 @@ small {
         0 20.4px 18.8px rgba(0, 0, 0, 0.02),
         0 30px 25px rgba(0, 0, 0, 0.03);
     } 
+
+    .document img {
+        margin: 20px 0 20px 0;
+        width: 100%;
+    }
 
     footer {
         font-size: 15px;

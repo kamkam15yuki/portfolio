@@ -354,6 +354,7 @@ ul li {
     letter-spacing: 1px;
 }
 
+
 footer {
     width: 100%;
     text-align: center;
@@ -528,7 +529,7 @@ pointer-events: none;
         margin-top: 30px;
     }
     .sakuhin_main-right-03 {
-        height: 75vh;
+        padding: 50px;
     }
     .sakuhin_main-right-04 {
         height: 75vh;
