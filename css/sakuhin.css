@@ -572,6 +572,11 @@ pointer-events: none;
         display: none; /* 通常のメニューを非表示にする */
     }
 
+    /*カーソル*/
+    .cursor {
+        display: none;
+    }
+
     .menu-btn {
 		position: fixed;
 		top: 10px;

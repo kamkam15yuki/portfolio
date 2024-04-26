@@ -41,7 +41,7 @@ body {
 
 .fadeUp{
 animation-name: fadeUpAnime;
-animation-duration:0.5s;
+animation-duration:1s;
 animation-fill-mode:forwards;
 opacity: 0;
 }
@@ -518,6 +518,11 @@ small {
 
 /*スマホ用*/
 @media only screen and (max-width: 960px) {
+
+    /*カーソル*/
+    .cursor {
+        display: none;
+    }
 
     .hamburger-menu {
         display: block; /* ハンバーガーメニューを表示する */

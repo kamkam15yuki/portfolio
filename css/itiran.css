@@ -666,6 +666,11 @@ small {
         width: 100%;
     }
 
+        /*カーソル*/
+        .cursor {
+            display: none;
+        }
+
     footer {
         font-size: 15px;
     }
