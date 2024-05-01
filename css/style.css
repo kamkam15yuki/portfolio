@@ -476,16 +476,27 @@ color: #5c5c5c; /* マウスを合わせたときのテキスト色 */
     font-family: "Noto Sans JP" , sans-serif;
 }
 
+
 footer {
     width: 100%;
-    background-color: #ffffff;
-    text-align: center;
-    margin: 100px 0 30px 0;
+    height: 100px;
+    margin: 80px 0 0 0;
 
+}
+.footer_main {
+    border-top: 1px solid #333;
+    align-items: center;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px 40px 0 40px;
+}
+.footer_main img {
+    width: 50px;
+    opacity: 0.8;
 }
 small {
     color: #5c5c5c;
-    letter-spacing :2px;
     font-size: 18px;
     font-weight: bold;
     font-family: "Noto Sans JP" , sans-serif;
@@ -792,6 +803,12 @@ small {
         margin: 30px 0 30px 0;
         font-size: 15px;
     
+    }
+    .footer_main {
+        padding: 20px 20px 0 20px;
+    }
+    .footer_main img {
+        width: 50px;
     }
     small {
         font-size: 12px;
