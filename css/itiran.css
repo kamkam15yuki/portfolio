@@ -894,6 +894,9 @@ small {
     .profile_design {
         display: none;
     }
+    .document {
+        margin-top: 20%;
+    }
     .document img {
         margin: 20px 0 20px 0;
         width: 100%;

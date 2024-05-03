@@ -436,6 +436,9 @@ small {
     display: flex;
     justify-content: space-between;
 }
+.profile-img02 {
+    display: none;
+}
 .profile_top01 {
     width: 5%;
     height: 5px;
@@ -469,7 +472,7 @@ small {
     align-items: center;
 }
 .profile_main02 {
-    width: 60%;
+    width: 55%;
 }
 .profile_main02 img {
     width: 100%;
@@ -870,9 +873,22 @@ small {
         0 20.4px 18.8px rgba(0, 0, 0, 0.02),
         0 30px 25px rgba(0, 0, 0, 0.03);
     } 
+
+    .shousai03 p {
+        font-size: 15px;
+    }
+    .shousai04 p {
+        font-size: 15px;
+    }
+    .shousai05 p {
+        font-size: 15px;
+    }
+    .shousai06 p {
+        font-size: 15px;
+    }
     .profile_top img {
         width: 100%;
-        margin: 40% 0 40% 0;
+        margin: 30% 0 30% 0;
     }
     .profile_main {
         display: none;
@@ -934,6 +950,12 @@ small {
     .profile_text {
         margin-top: 30%;
         background-color: #ffffff;
+    }
+    .profile-img01 {
+        display: none;
+    }
+    .profile-img02 {
+        display: block;
     }
 
         /*カーソル*/
